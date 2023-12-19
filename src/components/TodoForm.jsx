@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-
 const TodoForm = ({ addTodo }) => {
   const [value, setValue] = useState('')
   const handleSubmit = (e) => {
@@ -10,7 +9,6 @@ const TodoForm = ({ addTodo }) => {
       alert('Please enter a task');
       return;
     }
-
     addTodo(value);
     setValue('');
   };
@@ -20,7 +18,6 @@ const TodoForm = ({ addTodo }) => {
         <input type="text"
           placeholder='What is the Plan for Today?' onChange={(e) => setValue(e.target.value)} value={value} className='todo-input' />
         <button type='submit' className='todo-btn'>Add Todo</button>
-
       </form>
     </>
   )

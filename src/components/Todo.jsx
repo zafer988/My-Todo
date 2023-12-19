@@ -7,7 +7,6 @@ const Todo = ({ value, toggleComplete, deleteTodo, editTodo }) => {
   console.log(value);
   return (
     <>
-
       <div className={`todo ${value.completed ? 'completed' : ''}`}>
         <p onClick={() => toggleComplete(value.id)}>{value.value}</p>
         <div>
